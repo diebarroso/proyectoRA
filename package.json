@@ -1,0 +1,23 @@
+{
+  "name": "proyectora",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diebarroso/proyectoRA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diebarroso/proyectoRA/issues"
+  },
+  "homepage": "https://github.com/diebarroso/proyectoRA#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}

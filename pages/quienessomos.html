@@ -20,7 +20,7 @@
     <link rel="shortcut icon" href="img/Logo-RA.png" type="image/x-icon" />
 
     <!-- My Style-->
-    <link rel="stylesheet" href="../css/mystyle.css" />
+    <link rel="stylesheet" href="../css/custom.css" />
     <!--Font Google-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,12 +38,8 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-light py-3 menu">
         <div class="container">
-          <a
-            class="navbar-brand align-items-center justify-content-center fw-bold"
-            href="#"
-          >
-            Realizamos envios a todo el pais</a
-          >
+          <h4>Realizamos envios a todo el pais</h4>
+          <i class="bi bi-truck m-3"></i>
           <button
             class="navbar-toggler"
             type="button"
@@ -69,7 +65,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="catalogo.html">Catalogo</a>
+                <a class="nav-link" href="catalogo.html">Catálogo</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="materiales.html">Materiales</a>
@@ -83,40 +79,88 @@
       </nav>
     </header>
 
+    <section class="nos">
+      <div class="container-fluid">
+        <div class="nos-header my-3 py-1 pb-0">
+          <h1
+            class="nos-tittle fw-bold d-flex align-items-center justify-content-center"
+          >
+            ¿QUIENES SOMOS?
+          </h1>
+
+          <p class="nos-text d-flex align-items-center justify-content-center">
+            RA es un proyecto llegado en el momento exacto. Es una idea que te
+            propone una forma distinta de proteger tus ojos. Es la fusión de una
+            gran profesión, como la del óptico, con la libertad de crear un
+            accesorio confortable, de madera, hecho 100% a mano y con materiales
+            naturales , nos dió como resultado un producto artesanal. Son lentes
+            que dan gusto vestir y que no van a haber dos iguales dando vueltas
+            por ahí.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="taller p-5">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+        <img src="..." class="card-img-bottom" alt="..." />
+      </div>
+    </section>
+    <section
+      id="locaciones"
+      class="d-flex align-items-center justify-content-center p-5"
+    >
+      <div class="card text-center" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">
+            With supporting text below as a natural lead-in to additional
+            content.
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.6076971352495!2d-58.4144628850494!3d-34.68984936956689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcccf40d73d40b%3A0x199467f871ff9652!2sCFT%2C%20Cnel.%20Sayos%201954%2C%20B1822%20Lan%C3%BAs%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1666283372552!5m2!1ses-419!2sar"
+          ></iframe>
+        </div>
+      </div>
+    </section>
     <!-- Footer -->
     <footer
-      class="d-flex flex-wrap justify-content-between align-items-center py-1 my-4 border-top bg-dark"
+      class="d-flex flex-wrap justify-content-center align-items-center py-1 my-4 border-top bg-dark"
     >
       <div class="col-md-4 d-flex align-items-center bg-dark">
+        <ul class="nav col-md-4 justify-content-center d-flex m-3">
+          <li class="ms-3">
+            <a href="" class="text-white">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a href="" class="text-white">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a href="" class="text-white">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </li>
+        </ul>
         <span class="mb-2 mb-md-0 text-white bg-dark">
           &copy; 2022 | Creada por Diego Barroso
         </span>
       </div>
-
-      <ul class="nav col-md-4 justify-content-end d-flex m-3">
-        <li class="ms-3">
-          <a href="" class="text-white">
-            <i class="bi bi-whatsapp"></i>
-          </a>
-        </li>
-        <li class="ms-3">
-          <a href="" class="text-white">
-            <i class="bi bi-instagram"></i>
-          </a>
-        </li>
-        <li class="ms-3">
-          <a href="" class="text-white">
-            <i class="bi bi-facebook"></i>
-          </a>
-        </li>
-      </ul>
     </footer>
 
     <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
+    <script src="../js/bootstrap.js"></script>
   </body>
 </html>
