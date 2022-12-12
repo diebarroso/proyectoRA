@@ -7,30 +7,27 @@
     flex-direction: column;
     margin: 1rem;
     position: absolute;
-
-    
-    }
-    carousel-caption {
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      text-align: center;
-      padding: 15px;
-      font-size: 30px;
-      font-weight: bold;
-      cursor: pointer;
-      opacity: 0;
-      transition: opacity 1s;
-    }
-    carousel-caption:hover {
-      opacity: 2;
-    }
+  }
+  carousel-caption {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    padding: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  carousel-caption:hover {
+    opacity: 2;
   }
 }

@@ -63,6 +63,49 @@
   opacity: 2;
 }
 
+.form {
+  background-image: url(/img/fondocontacto.png);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.form h2, .form .h2 {
+  color: white;
+  padding: 70px;
+}
+
+.catalogo .carousel-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 1rem;
+  position: absolute;
+}
+.catalogo carousel-caption {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  padding: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.catalogo carousel-caption:hover {
+  opacity: 2;
+}
+
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -10835,3 +10878,4 @@ textarea.form-control-lg {
 }
 
 /*# sourceMappingURL=custom.css.map */
+
