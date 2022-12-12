@@ -18,8 +18,6 @@ body {
       transparent 0
     );
     background-size: 0.05em 0.05em;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 
     animation: shad-anim 15s linear infinite;
     @keyframes shad-anim {
