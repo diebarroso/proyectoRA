@@ -159,7 +159,7 @@ label {
   backface-visibility: hidden;
   border-radius: 10px;
   overflow: hidden;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .cardd .front {
@@ -186,7 +186,7 @@ label {
 }
 
 .cardd .back {
-  transform: perspective(600px) rotateY(180deg);
+  transform: rotateY(180deg);
   background: black;
   padding: 15px;
   color: #f3f3f3;
@@ -205,11 +205,11 @@ label {
 }
 
 .cardd:hover .front {
-  transform: perspective(600px) rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .cardd:hover .back {
-  transform: perspective(600px) rotateY(360deg);
+  transform: rotateY(360deg);
 }
 
 .parent {
