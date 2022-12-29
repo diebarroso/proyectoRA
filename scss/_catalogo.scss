@@ -28,7 +28,7 @@
   transition: 0.5s;
 }
 .cardd .front {
-  transform: perspective(600px) rotateY(0 deg);
+  transform: rotateY(0deg);
   box-shadow: 0 5px 10px #000;
   background: $primary;
 }
