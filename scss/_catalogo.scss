@@ -1,12 +1,74 @@
-.card-group {
-  border: none;
+.nprod {
+  margin: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
 
-  .card {
-    border: none;
-  }
-  .card-img-top {
-    max-width: 50%;
-    max-height: 50%;
-    border-radius: 20px;
-  }
+.catalogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+.cardd {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+}
+.cardd .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.cardd .front {
+  transform: perspective(600px) rotateY(0 deg);
+  box-shadow: 0 5px 10px #000;
+  background: $primary;
+}
+.cardd .front img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cardd .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: white;
+  text-align: center;
+}
+
+.cardd .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: black;
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+.name2,
+.detalle {
+  font-size: 20px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.cardd:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+.cardd:hover .back {
+  transform: perspective(600px) rotateY(360deg);
 }
