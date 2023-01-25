@@ -25,10 +25,10 @@
   backface-visibility: hidden;
   border-radius: 10px;
   overflow: hidden;
-  transition: 1s;
+  transition: all 600ms ease;
 }
 .cardd .front {
-  transform: rotateY(0deg);
+  transform: perspective(600px) rotateY(0deg);
   box-shadow: 0 5px 10px #000;
   background: $primary;
 }
@@ -49,7 +49,7 @@
 }
 
 .cardd .back {
-  transform: rotateY(180deg);
+  transform: perspective(600px) rotateY(180deg);
   background: black;
   padding: 15px;
   color: #f3f3f3;
@@ -67,8 +67,8 @@
 }
 
 .cardd:hover .front {
-  transform: rotateY(180deg);
+  transform: perspective(600px) rotateY(180deg);
 }
 .cardd:hover .back {
-  transform: rotateY(360deg);
+  transform: perspective(600px) rotateY(360deg);
 }
