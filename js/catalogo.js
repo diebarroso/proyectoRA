@@ -310,7 +310,7 @@ function totalGeneral() {
 }
 
 document.addEventListener('DOMContentLoaded', e => {
-  fetch(..gafas.json)
+  fetch(https://github.com/diebarroso/proyectoRA/blob/main/js/gafas.json)
       // fetch("../gafas.json")
       .then(object => object.json())
       .then(jsonObject => renderizarProductos(jsonObject))
