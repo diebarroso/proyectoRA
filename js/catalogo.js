@@ -308,33 +308,34 @@ function totalGeneral() {
 
   return productoTotal;
 }
-
-document.addEventListener('DOMContentLoaded', e => {
-  fetch(https://github.com/diebarroso/proyectoRA/blob/main/js/gafas.json)
-      // fetch("../gafas.json")
-      .then(object => object.json())
-      .then(jsonObject => renderizarProductos(jsonObject))
+document.addEventListener("DOMContentLoaded", (e) => {
+  fetch("https://github.com/diebarroso/proyectoRA/blob/main/js/gafas.json")
+    // fetch("../files/bebidas.json")
+    .then((object) => object.json())
+    .then((jsonObject) => renderizarProductos(jsonObject));
   // .then(jsonObject => console.log(jsonObject)) // Mostramos en consola los datos obtenidos a través de Fetch API en el response que convertimos en un objeto JSON con el método json()
 });
 
 function renderizarProductos(productos) {
-  const listaProductos = document.getElementById('lista-productos');
+  const listaProductos = document.getElementById("lista-productos");
   const cantColumn = 4;
 
   // console.log(productos)
 
   //Filas
   for (let i = 0; i < productos.length / cantColumn; i++) {
-      let fila = "";
+    let fila = "";
 
-      //Columnas
-      let indiceInicial = i * cantColumn;
-      let htmlProducto = ""
+    //Columnas
+    let indiceInicial = i * cantColumn;
+    let htmlProducto = "";
 
-      for (let j = indiceInicial; j < productos.length && j < indiceInicial + cantColumn; j++) {
-
-
-          htmlProducto = `<div class="col-12 col-md-6 col-lg-3">
+    for (
+      let j = indiceInicial;
+      j < productos.length && j < indiceInicial + cantColumn;
+      j++
+    ) {
+      htmlProducto = `<div class="col-12 col-md-6 col-lg-3">
               <div class="card">
                   <img src="../img/${productos[j].img}" alt="${productos[j].titulo}" class="card.ing-top img-fluid">
                   <div class="card-body">
@@ -343,16 +344,13 @@ function renderizarProductos(productos) {
                       <a href="#" class="btn btn-primary" data-id="${productos[j].dataId}">Agregar Al Carrito</a>
                   </div>
               </div> <!--.card-->
-          </div>`
+          </div>`;
 
-          fila += htmlProducto;
+      fila += htmlProducto;
+    } //Fin FOR Columnas
 
-      } //Fin FOR Columnas
+    let htmlRow = `<div class="row g-3"> ${fila} </div>`;
 
-      let htmlRow = `<div class="row g-3"> ${fila} </div>`
-
-      listaProductos.innerHTML += htmlRow;
-
+    listaProductos.innerHTML += htmlRow;
   } // Fin FOR Filas
-
 }
