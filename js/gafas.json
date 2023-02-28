@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "titulo": "AMON",
+    "precioReal": 8999,
+    "precioRebajado": 7999,
+
+    "dataId": "B1"
+  },
+  {
+    "id": 2,
+    "titulo": "BASTET",
+    "precioReal": 1000,
+    "precioRebajado": 9000,
+
+    "dataId": "B2"
+  },
+  {
+    "id": 3,
+    "titulo": "MUT",
+    "precioReal": 9999,
+    "precioRebajado": 8999,
+
+    "dataId": "B3"
+  },
+  {
+    "id": 4,
+    "titulo": "KHEPRI",
+    "precioReal": 8000,
+    "precioRebajado": 7000,
+
+    "dataId": "B4"
+  },
+  {
+    "id": 5,
+    "titulo": "SETH",
+    "precioReal": 10000,
+    "precioRebajado": 8500,
+
+    "dataId": "B5"
+  },
+  {
+    "id": 6,
+    "titulo": "THOT",
+    "precioReal": 10000,
+    "precioRebajado": 8700,
+
+    "dataId": "B6"
+  },
+  {
+    "id": 7,
+    "titulo": "ISIS",
+    "precioReal": 10000,
+    "precioRebajado": 9500,
+
+    "dataId": "B7"
+  },
+  {
+    "id": 8,
+    "titulo": "OSIRIS",
+    "precioReal": 9000,
+    "precioRebajado": 8300,
+
+    "dataId": "B8"
+  }
+]
